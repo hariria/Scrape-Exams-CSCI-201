@@ -31,5 +31,6 @@
 ### INSTALLATION
 1.  git clone the file into the directory where you want to save all of your practice midterms/finals
     - ie. run `git clone git@github.com:hariria/Scrape-Exams-CSCI-201.git`
+        - if this doesn't work / permission is denied, try running `git clone https://github.com/hariria/Scrape-Exams-CSCI-201.git`
 2.  then `cd` into that directory and run `python scrapeExams.py` on your terminal
 3.  Hopefully it should work!
