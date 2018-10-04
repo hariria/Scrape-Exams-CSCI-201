@@ -18,7 +18,7 @@ def getPracticePDFs(url="http://www-scf.usc.edu/~csci201/exams.html"):
             arrayOfPDFs.append([])
         elif "</tr>" in decodedLine:
             countRow += 1
-        if ".pdf" in decodedLine:
+        if ".pdf" in decodedLine and "written" in decodedLine:
             temp = decodedLine.split("\"")
             for element in temp:
                 if ".pdf" in element:
@@ -27,7 +27,6 @@ def getPracticePDFs(url="http://www-scf.usc.edu/~csci201/exams.html"):
         if (len(elementArray) == 0):
             continue
         else:
-            # print(elementArray)
             file1 = elementArray[0]
             indexOfPDF = elementArray[0].find(".pdf")
             decIndex = indexOfPDF
